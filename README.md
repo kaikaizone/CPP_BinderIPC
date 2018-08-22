@@ -3,9 +3,9 @@
 
 参考文件:
 frameworks\av\include\media\IMediaPlayerService.h     (IMediaPlayerService,BnMediaPlayerService)
-frameworks\av\media\libmedia\IMediaPlayerService.cpp                      (BpMediaPlayerService，BnMediaPlayerService类方法的实现)
+frameworks\av\media\libmedia\IMediaPlayerService.cpp  (BpMediaPlayerService，BnMediaPlayerService类方法的实现)
 frameworks\av\media\libmediaplayerservice\MediaPlayerService.h
-frameworks\av\media\libmediaplayerservice\MediaPlayerService.cpp （MediaPlayerService::instantiate()添加服务）
+frameworks\av\media\libmediaplayerservice\MediaPlayerService.cpp（MediaPlayerService::instantiate()添加服务，继承BnMediaPlayerService，服务的具体实现）
 frameworks\av\media\mediaserver\Main_mediaserver.cpp   (media_server, addService注册服务 init进程解析rc文件来启动
 																		service media /system/bin/mediaserver)
  frameworks\av\media\mediaserver\Android.mk                                                     
